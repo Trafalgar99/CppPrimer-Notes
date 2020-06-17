@@ -78,6 +78,8 @@ int main(int argc, char **argv)
 
     // int a = 4.5;
     // int b{4.5};
+    cout << "hello world\n"
+         << endl;
 
     return 0;
 }
