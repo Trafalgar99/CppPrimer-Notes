@@ -116,3 +116,26 @@ constexpr int a(int a) { return 67; }
 
 //     a(45,5.6);
 // }
+
+class test
+{
+    friend constexpr int a(int);
+
+public:
+    int a(int c) const
+    {
+        return this->x;
+        yy++;
+    } //常量成员函数
+    test() = default;
+    test(int a) : x{a}
+    {
+    }
+
+private:
+    int x = 0;
+    mutable int yy = 0;
+    string s = string(3, 'a');
+};
+
+test asd;
