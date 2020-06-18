@@ -18,9 +18,9 @@ void test1()
     const int &rd2 = dval2;
     std::cout << rd2 << std::endl;
 }
-int tr = 89;
-void err(initializer_list<string> li);
-
+// int tr = 89;
+// void err(initializer_list<string> li);
+class rt;
 int main(int argc, char **argv)
 {
     // string s1{"sdfs"};
@@ -78,8 +78,8 @@ int main(int argc, char **argv)
 
     // int a = 4.5;
     // int b{4.5};
-    cout << "hello world\n"
-         << endl;
+
+    // rt test;
 
     return 0;
 }
@@ -104,7 +104,7 @@ int main(int argc, char **argv)
 // typedef string (&xx)[10];
 // xx func();
 
-constexpr int a(int a) { return 67; }
+// constexpr int a(int a) { return 67; }
 
 // int a(int c,int b){
 //     ;
@@ -117,25 +117,52 @@ constexpr int a(int a) { return 67; }
 //     a(45,5.6);
 // }
 
-class test
+// class test
+// {
+//     friend constexpr int a(int);
+
+// public:
+//     int a(int c) const
+//     {
+//         return this->x;
+//         yy++;
+//     } //常量成员函数
+//     test() = default;
+//     test(int a) : x{a}
+//     {
+//     }
+
+// private:
+//     int x = 0;
+//     mutable int yy = 0;
+//     string s = string(3, 'a');
+// };
+
+// test asd;
+
+class X
 {
-    friend constexpr int a(int);
-
 public:
-    int a(int c) const
-    {
-        return this->x;
-        yy++;
-    } //常量成员函数
-    test() = default;
-    test(int a) : x{a}
-    {
-    }
-
-private:
-    int x = 0;
-    mutable int yy = 0;
-    string s = string(3, 'a');
+    void df(){};
+};
+using fg = int;
+class Y
+{
+    // friend void X::df();
+public:
+    fg ty = 1;
+    using fg = double;
+    fg rr();
 };
 
-test asd;
+// Y::fg Y::rr() { dreturn 0; }
+
+class rt
+{
+public:
+    rt(string s = "") {}
+    // rt(istream &is = cin) {}
+    rt() : rt("df") {}
+
+private:
+};
