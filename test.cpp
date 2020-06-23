@@ -21,6 +21,7 @@ void test1()
 }
 // int tr = 89;
 // void err(initializer_list<string> li);
+// void vfv(vector<int>);
 class rt;
 int main(int argc, char **argv)
 {
@@ -81,9 +82,31 @@ int main(int argc, char **argv)
     // int b{4.5};
 
     // rt test;
+    // double ad = 5.675;
+    // int s(ad);
+
+    // int a[]{1, 2, 3, 4};
+    // decltype(a[1]) ss = 3;
+
+    // int a = 0;
+    // decltype(++a) ss;
+
+    // int e =0;
+    // ++e = 9;
+
+    // vfv({1, 2, 3, 4, 5, 6, 7});
+
+
 
     return 0;
 }
+// void vfv(vector<int> v)
+// {
+//     for (auto i : v)
+//     {
+//         cout << i << endl;
+//     }
+// }
 
 // void a(int arr[][10]);
 // void err(initializer_list<string> li){
